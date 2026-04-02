@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <h1>Calculadora</h1>
+    <div class="calculadora">
+        <input type="text" disabled id="display">
+        <div class="botoes">
+            <button onclick="apagarUltimo()">C</button>
+            <button onclick="limparDisplay()">AC</button>
+            <button onclick="inserirNoDisplay('/')">/</button>
+            <button onclick="inserirNoDisplay('*')">X</button>
+            <button onclick="inserirNoDisplay('7')">7</button>
+            <button onclick="inserirNoDisplay('8')">8</button>
+            <button onclick="inserirNoDisplay('9')">9</button>
+            <button onclick="inserirNoDisplay('-')">-</button>
+            <button onclick="inserirNoDisplay('4')">4</button>
+            <button onclick="inserirNoDisplay('5')">5</button>
+            <button onclick="inserirNoDisplay('6')">6</button>
+            <button onclick="inserirNoDisplay('+')">+</button>
+            <button onclick="inserirNoDisplay('1')">1</button>
+            <button onclick="inserirNoDisplay('2')">2</button>
+            <button onclick="inserirNoDisplay('3')">3</button>
+            <button class="btn-igual" onclick="calcular()">=</button>
+            <button class="btn-zero" onclick="inserirNoDisplay('0')">0</button>
+            <button onclick="inserirNoDisplay('.')">.</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
